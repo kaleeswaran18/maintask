@@ -1028,7 +1028,8 @@ if(req.body.role=='executeofficer'){
   }
   const Login = async (req, res) => {
     try {
-      const { Email, password,phoneNo } = req.body;
+      const { Email, password} = req.body;
+      const phoneNo=req.body.phone
       let a=""
       let b=""
      if(req.body.Email){
